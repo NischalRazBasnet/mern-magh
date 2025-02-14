@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400");
+
+* {
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+nav {
+  display: inline-flex;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  background-color: rgb(238, 224, 204);
+}
+
+nav > a > img {
+  height: 60px;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+nav > ul > a > li {
+  display: inline-flex;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  padding: 30px;
+  text-align: right;
+}
+
+.landing {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+h1 {
+  margin: 12px;
+}
+
+video {
+  width: 50%;
+  height: 480px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 40px black;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.suv,
+.sedan,
+.electric {
+  margin: 40px;
+}
+.detail {
+  text-align: center;
+  border-radius: 10px;
+  border-style: none;
+  border: 1px solid grey;
+  margin: 0px 20px 0px 40px;
+}
+
+.gallery{
+    margin: 20px;
+}
+
+.gallery>img{
+    margin: 10px;
+}
+
+.sellform{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+form{
+    width: 500px;
+    height:400px;
+    margin: 12px;
+}
+
+form>label{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+form>input,textarea{
+    border-radius: 10px;
+    margin: 10px;
+    width:100%;
+}
+
+form>button{
+    margin:20px;
+    font-weight: 600;
+    font-size: 16px;
+    width:50%;
+    height: 30px;
+    background-color:antiquewhite;
+    border: none;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+}
+
+button:hover{
+    scale:1.1;
+}
+
+.contact{
+    margin:20px;
+    justify-items: center;
+}
+
+iframe{
+    margin:10px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: dimgray;
+}
