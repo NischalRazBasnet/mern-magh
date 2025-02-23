@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bx {
+        height: 200px;
+        width: 200px;
+        background-color: #fb6464;
+        animation: animate 5s 0s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+        /*  fill-mode; */
+      }
+
+      @keyframes animate {
+        10% {
+          background-color: rgb(179, 37, 37);
+        }
+        30% {
+          background-color: rgb(109, 15, 15);
+          transform: translateX(400px) rotate(90deg);
+        }
+        50% {
+          background-color: rgb(128, 22, 22);
+          transform: translateX(400px) translateY(400px) rotate(180deg);
+        }
+        70% {
+          background-color: rgb(160, 77, 77);
+          transform: translateY(400px) rotate(270deg);
+        }
+        100% {
+          background-color: rgb(255, 0, 0);
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bx">
+    </div>
+  </body>
+</html>
