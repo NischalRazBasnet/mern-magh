@@ -1,3 +1,6 @@
+// //primitive types: String number boolean undifined null
+
+// //String
 // let firstName = 'Nischal';
 // let lastName = 'Basnet';
 // const age = 22;
@@ -18,29 +21,10 @@
 // console.log(firstName.substring(3));
 // console.log(firstName.substring(0, 6));
 
-// let a= 10;
-// let b= 5;
-// sum = a+b;
-// console.log(sum)
-
 // const personName = 'john';
 // const address = 'new road';
 // const isMarried = false;
 // const age = 22;
-
-// const number = '100';
-// const num = 100;
-// const point = '9.9';
-// const m = 'hello';
-// console.log(Number.isNaN(Number(num)));
-// console.log(Number(number) + 100);
-// console.log(Number(point) + 1);
-// console.log(Number.parseInt(number));
-// console.log(Number.parseInt(point));
-// console.log(Number.parseFloat(point));
-// console.log(Number.isInteger(number));
-// console.log(Number.isInteger(num));
-// console.log(Number.isInteger(point));
 
 // console.log("his name is "+personName,"lives in "+address,"his age is "+age, "is he married "+isMarried)
 
@@ -48,6 +32,7 @@
 
 // console.log(wholeSentence);
 
+// //object
 // const person = {
 //   name: 'John',
 //   age: 22,
@@ -73,63 +58,25 @@
 // console.log(house);
 // console.log(mobile);
 
-// const rating = 7.645;
 
-// console.log(Math.round(rating))
-// console.log(Math.floor(rating))
-// console.log(Math.ceil(rating))
 
-// console.log(Math.PI);
-// console.log(Math.cbrt(4));
-// console.log(Math.sqrt(2));
-// console.log(Math.pow(2, 3));
-// console.log(Math.max(2, 3));
-// console.log(Math.min(2, 3));
+//null vs undefined
 
-// const random = Math.random() * 1000+1;
-// console.log(Math.floor(random));
+let empty; //js automatically assign as undefined
+let thisEmpty = null; //user intentionally setting value as empty eg.product out of stock
 
-// Task
-// Exercise:1
-const random = Math.random();
-console.log('Random Number: '+ random);
+let thisPerson = 'ram';
+let hisAge = 22;
 
-// Exercise:2
-const number = 12.7;
-console.log('Floor: '+ Math.floor(number));
+const emptyPerson = () => {
+  //uncalled function returns undefined
+  thisName = 'ram';
+  age = '22';
+};
 
-// Exercise:3
-const num = 4.1;
-console.log('Ceil: '+Math.ceil(num));
-
-// Exercise:4
-const maxNum = Math.random() * (100 - 1 + 1) + 1;
-const minNum = Math.random() * (100 - 1 + 1) + 1;
-console.log('Maximun Number: '+maxNum);
-console.log('Minimum Number: '+minNum);
-
-// Exercise:5
-console.log('2 Power of 3 = '+Math.pow(2, 3));
-
-// Exercise:6
-const square = 49;
-console.log('Square root of 49 = '+Math.sqrt(square));
-
-// Exercise:7
-console.log('Absolute value: '+Math.abs(-15))
-
-// Exercise:8
-console.log('Round of 6.4 = '+Math.round(6.4))
-console.log('Round of 3.6 = '+Math.round(3.6))
-console.log('Round of 8.2 = '+Math.round(8.2))
-
-// Exercise:9
-let deg = 30;
-let rad = deg*Math.PI/180;
-console.log('Sin Value: '+Math.sin(rad));
-console.log('Cos Value: '+Math.cos(rad))
-
-// Exercise:10
-const r = 7;
-let circumference = 2*Math.PI*r;
-console.log('Circumference of circle with radius 7 = '+circumference)
+console.log(empty);
+console.log(thisEmpty);
+console.log(thisPerson);
+console.log(hisAge);
+emptyPerson();
+console.log(emptyPerson.age);
