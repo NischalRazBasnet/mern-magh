@@ -58,25 +58,27 @@
 // console.log(house);
 // console.log(mobile);
 
-
-
 //null vs undefined
 
-let empty; //js automatically assign as undefined
-let thisEmpty = null; //user intentionally setting value as empty eg.product out of stock
+// let empty; //js automatically assign as undefined
+// let thisEmpty = null; //user intentionally setting value as empty eg.product out of stock
 
-let thisPerson = 'ram';
-let hisAge = 22;
+// let thisPerson = 'ram';
+// let hisAge = 22;
 
-const emptyPerson = () => {
-  //uncalled function returns undefined
-  thisName = 'ram';
-  age = '22';
-};
+// const emptyPerson = () => {
+//   //uncalled function returns undefined
+//   thisName = 'ram';
+//   age = '22';
+// };
 
-console.log(empty);
-console.log(thisEmpty);
-console.log(thisPerson);
-console.log(hisAge);
-emptyPerson();
-console.log(emptyPerson.age);
+// console.log(empty);
+// console.log(thisEmpty);
+// console.log(thisPerson);
+// console.log(hisAge);
+// emptyPerson();
+// console.log(emptyPerson.age);
+
+const btn = document.addEventListener('click', () => {
+  alert('hello');
+});

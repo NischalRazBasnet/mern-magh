@@ -1,3 +1,12 @@
+const netSalary = 90000;
+const netExpenses = 50000;
+if (netSalary > netExpenses) {
+  console.log(`your remaining balance: ${netSalary - netExpenses}`);
+} else if (netExpenses > netSalary) {
+  console.log(`your remaining balance: ${netExpenses - netSalary}`);
+} else {
+  console.log('Your balance remain same');
+}
 // Check if a number is even or odd
 let n = 2;
 if (n % 2 == 0) {
@@ -107,6 +116,6 @@ if (age >= 18) {
   console.log('Teenager');
 } else if (age > 0 && age < 13) {
   console.log('Child');
-}else{
-  console.log("Invalid")
+} else {
+  console.log('Invalid');
 }
