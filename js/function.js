@@ -56,7 +56,7 @@ const personName = ['ram', 'shyam', 'hari', 'sita'];
 //     console.log(capital.toUpperCase())
 // })
 
-const numbers = [11, 22, 33, 44, 55, 66, 77];
+// const numbers = [11, 22, 33, 44, 55, 66, 77];
 // let sum = 0;
 // numbers.forEach((total) => {
 //   sum += total;
@@ -75,19 +75,44 @@ const numbers = [11, 22, 33, 44, 55, 66, 77];
 // })
 // console.log(num)
 
-const oddEven = numbers.filter((a) => {
-  if (a % 2 === 0) {
-    console.log(a, 'even numbers');
-    return true;
-  } else {
-    console.log(a, 'odd numbers');
-    return false;
-  }
-});
-console.log(oddEven);
+// const oddEven = numbers.filter((a) => {
+//   if (a % 2 === 0) {
+//     console.log(a, 'even numbers');
+//     return true;
+//   } else {
+//     console.log(a, 'odd numbers');
+//     return false;
+//   }
+// });
+// console.log(oddEven);
 
 // // find
 // const num1 = numbers.find((a)=>{
 //     return a>77
 // })
 // console.log(num1)
+
+// Reduce
+const numbers = [11, 22, 33, 44, 55];
+const red = numbers.reduce((a, b) => {
+  return a + b;
+});
+console.log(red);
+// find min
+const redMin = numbers.reduce((a, b) => {
+  //1st loop 11<22 ? 11 : 22
+  //2nd loop 11<33 ? 11 : 33
+  //3rd loop 11<44 ? 11 : 44
+  //4th loop 11<55 ? 11 : 55
+  return a < b ? a : b;
+});
+console.log(redMin);
+
+const redMax = numbers.reduce((a, b) => {
+  //1st loop 11>22 ? 11 : 22
+  //2nd loop 11>33 ? 22 : 33
+  //3rd loop 11>44 ? 33 : 44
+  //4th loop 11>55 ? 44 : 55
+  return a > b ? a : b;
+});
+console.log(redMax);
