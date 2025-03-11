@@ -92,27 +92,125 @@ const personName = ['ram', 'shyam', 'hari', 'sita'];
 // })
 // console.log(num1)
 
-// Reduce
-const numbers = [11, 22, 33, 44, 55];
-const red = numbers.reduce((a, b) => {
-  return a + b;
-});
-console.log(red);
-// find min
-const redMin = numbers.reduce((a, b) => {
-  //1st loop 11<22 ? 11 : 22
-  //2nd loop 11<33 ? 11 : 33
-  //3rd loop 11<44 ? 11 : 44
-  //4th loop 11<55 ? 11 : 55
-  return a < b ? a : b;
-});
-console.log(redMin);
+// // Reduce
+// const numbers = [11, 22, 33, 44, 55];
+// const red = numbers.reduce((a, b) => {
+//   return a + b;
+// });
+// console.log(red);
+// // find min
+// const redMin = numbers.reduce((a, b) => {
+//   //1st loop 11<22 ? 11 : 22
+//   //2nd loop 11<33 ? 11 : 33
+//   //3rd loop 11<44 ? 11 : 44
+//   //4th loop 11<55 ? 11 : 55
+//   return a < b ? a : b;
+// });
+// console.log(redMin);
 
-const redMax = numbers.reduce((a, b) => {
-  //1st loop 11>22 ? 11 : 22
-  //2nd loop 11>33 ? 22 : 33
-  //3rd loop 11>44 ? 33 : 44
-  //4th loop 11>55 ? 44 : 55
-  return a > b ? a : b;
+// const redMax = numbers.reduce((a, b) => {
+//   //1st loop 11>22 ? 11 : 22
+//   //2nd loop 11>33 ? 22 : 33
+//   //3rd loop 11>44 ? 33 : 44
+//   //4th loop 11>55 ? 44 : 55
+//   return a > b ? a : b;
+// });
+// console.log(redMax);
+
+const addTwoNumbers = (a, b) => {
+  if (typeof a === 'number' && typeof b === 'number') {
+    return a + b;
+  } else {
+    return 'Please provide Valid numbers';
+  }
+};
+
+const sum = addTwoNumbers(22, 24);
+console.log(sum);
+
+////////////////////////////////////////
+//class
+class Person {
+  //properties
+  userName = 'ram';
+  age = 45;
+  //methods
+  reading() {}
+  sleeping() {}
+}
+//primitive types String number boolean undefined null
+// reference types Array , Object, Function
+
+class User {
+  constructor(personName, age) {
+    this.personName = personName;
+    this.age = age;
+  }
+  //methods
+  reading() {
+    console.log(`${this.personName} is reading a book`);
+  }
+  sleeping() {
+    console.log(`${this.personName} is sleeping`);
+  }
+
+  get someName() {
+    return 'hello jee';
+  }
+
+  set setVal(val) {
+    this.personName = val;
+  }
+}
+
+class A extends User {
+  constructor(personName, age) {
+    super(personName, age);
+  }
+}
+const userA = new A('rita', 90);
+
+userA.sleeping();
+
+const user1 = new User('shyam', 190);
+user1.setVal = 'rita';
+console.log(user1.personName);
+
+//////////////////////////////////////
+//Destructing
+const person = {
+  name: 'ram',
+  age: 20,
+  address: 'balaju',
+  habits: ['sing', 'dance'],
+  some: {
+    add: {
+      gio: [{ fi: 99 }],
+    },
+  },
+};
+
+const {
+  name,
+  age,
+  address,
+  habits: [x, y],
+  some: {
+    add: {
+      gio: [{ fi }],
+    },
+  },
+} = person;
+console.log(name, age, address, x, fi);
+
+///////////////////////////////////////////
+const posts = [
+  { id: 1, name: 'ram', age: 90 },
+  { id: 2, name: 'shyam', age: 70 },
+  { id: 3, name: 'rita', age: 60 },
+  { id: 4, name: 'hari', age: 50 },
+];
+const names = posts.map(({ id, name, age }) => {
+  return id, name;
 });
-console.log(redMax);
+console.log(names);

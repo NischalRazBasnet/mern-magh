@@ -1,7 +1,7 @@
 // //primitive types: String number boolean undifined null
 
 // //String
-// let firstName = 'Nischal';
+let firstName = 'Nischal b';
 // let lastName = 'Basnet';
 // const age = 22;
 // let address = 'phutung,kathmandu';
@@ -14,7 +14,7 @@
 // console.log(firstName.includes('Ni'));
 // console.log(firstName.includes('ni'));
 // console.log(firstName.length);
-// console.log(firstName.trim().length);
+console.log(firstName.trim().length);
 // console.log(firstName.slice(4));
 // console.log(firstName.slice(0, 4));
 // console.log(firstName.repeat(3));
@@ -79,6 +79,6 @@
 // emptyPerson();
 // console.log(emptyPerson.age);
 
-const btn = document.addEventListener('click', () => {
-  alert('hello');
-});
+// const btn = document.addEventListener('click', () => {
+//   alert('hello');
+// });
