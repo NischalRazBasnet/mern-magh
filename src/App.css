@@ -1,0 +1,17 @@
+/* #main-container {
+  background-image: url('../public/godfather-hd-movie-title.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(233, 239, 244);
+  overflow: hidden;
+}
+
+#info-section {
+  backdrop-filter: blur(10px);
+  background: #bdbdbd1c;
+}
+
+.grid-cols-2 {
+  grid-template-columns: (2fr, 1fr);
+} */
