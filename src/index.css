@@ -1,1 +1,52 @@
 @import 'tailwindcss';
+
+body {
+  background-color: #131927;
+}
+
+@theme {
+  --color-body: #131927;
+  --color-primary: #ffffff;
+  --color-secondary: #86e5ec;
+  --color-teritary: #378daa;
+  --color-btnGray: #4c5660;
+}
+
+.icon-gradient {
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(to right, #86e5ec, #378daa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer components {
+  h1 {
+    @apply text-7xl font-bold;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  p {
+    @apply text-base;
+  }
+}
+
+@layer utilities {
+  .bg-linear {
+    @apply bg-gradient-to-r from-secondary to-teritary;
+  }
+  .text-linear {
+    @apply bg-gradient-to-r from-secondary to-teritary bg-clip-text text-transparent;
+  }
+  .nav-text {
+    @apply flex gap-4 text-lg;
+  }
+  .hoverNav {
+    @apply hover:text-secondary;
+  }
+  .my-grid {
+    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
+  }
+}

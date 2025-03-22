@@ -1,13 +1,12 @@
 import React from 'react';
 
-export default function ButtonCompo({ greetEvent }) {
+export default function ButtonCompo({ effects }) {
   return (
     <div>
       <button
-        onClick={() => greetEvent('ram')}
-        className='bg-black text-white px-2 py-1 cursor-pointer hover:bg-gray-700'
+        className={`${effects} text-white text-lg px-7 py-3 cursor-pointer rounded-xl `}
       >
-        Click TO View
+        Start free trial
       </button>
     </div>
   );
