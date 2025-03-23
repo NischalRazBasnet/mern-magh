@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
-body {
+/* body {
   background-color: #131927;
-}
+} */
 
 @theme {
   --color-body: #131927;
@@ -10,6 +10,19 @@ body {
   --color-secondary: #86e5ec;
   --color-teritary: #378daa;
   --color-btnGray: #4c5660;
+  --color-defaultGreen: #0fb981;
+  --my-grid: repeat(auto-fit, minmax(300px, 1fr));
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
 }
 
 .icon-gradient {
@@ -21,15 +34,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@layer components {
+@layer base {
   h1 {
-    @apply text-7xl font-bold;
+    @apply text-6xl text-primary font-bold max-sm:text-3xl;
+  }
+  h2 {
+    @apply text-2xl text-primary font-semibold max-sm:text-xl;
   }
   h3 {
-    @apply text-xl;
+    @apply text-xl text-primary tracking-widest leading-[1.6] max-sm:text-lg;
   }
   p {
-    @apply text-base;
+    @apply text-lg text-primary max-sm:text-base leading-[1.6] text-justify;
   }
 }
 
@@ -45,8 +61,5 @@ body {
   }
   .hoverNav {
     @apply hover:text-secondary;
-  }
-  .my-grid {
-    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
   }
 }

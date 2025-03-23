@@ -32,10 +32,10 @@ export default function Header() {
           </div>
         </div>
         <div className='nav-text'>
-          <NavLink to={'#'} className='hoverNav'>
+          <NavLink to={'product'} className='hoverNav'>
             Product
           </NavLink>
-          <NavLink to={'#'} className='hoverNav'>
+          <NavLink to={'feature'} className='hoverNav'>
             Features
           </NavLink>
           <NavLink to={'#'} className='hoverNav'>
