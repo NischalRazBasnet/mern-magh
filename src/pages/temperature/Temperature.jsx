@@ -31,7 +31,7 @@ export default function Temperature() {
 
     const farenValue = parseFloat(value);
     if (!isNaN(farenValue)) {
-      const toCelsius = ((farenValue - 32) * 9) / 5;
+      const toCelsius = ((farenValue - 32) * 5) / 9;
       setCelsius(toCelsius.toFixed(1));
     }
   };
