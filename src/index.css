@@ -7,7 +7,7 @@
   --color-teritary: #378daa;
   --color-btnGray: #4c5660;
   --color-defaultGreen: #0fb981;
-  --my-grid: repeat(auto-fit, minmax(300px, 1fr));
+  --my-grid: repeat(auto-fit, minmax(350px, 1fr));
   --animate-wiggle: wiggle 1s ease-in-out infinite;
 
   @keyframes wiggle {
@@ -23,7 +23,7 @@
 
 @layer base {
   h1 {
-    @apply text-6xl font-bold max-sm:text-3xl;
+    @apply text-6xl font-bold leading-[1.6] max-sm:text-3xl;
   }
   h2 {
     @apply text-2xl font-semibold max-sm:text-xl;

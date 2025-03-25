@@ -28,6 +28,18 @@ export default function Header() {
         >
           Temperature
         </NavLink>
+        <NavLink
+          to={'users'}
+          className={(e) => (e.isActive ? 'text-secondary' : 'hoverNav')}
+        >
+          User Details
+        </NavLink>
+        <NavLink
+          to={'products'}
+          className={(e) => (e.isActive ? 'text-secondary' : 'hoverNav')}
+        >
+          Products
+        </NavLink>
       </div>
     </div>
   );

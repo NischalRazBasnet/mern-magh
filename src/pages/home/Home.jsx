@@ -27,7 +27,6 @@ export default function Home() {
     setTasks((prev) => prev.filter((task) => task.id !== id));
   };
 
-  console.log(tasks);
   return (
     <div className='mx-auto flex flex-col w-[900px] pt-20'>
       <div>
@@ -37,7 +36,12 @@ export default function Home() {
         >
           <FaPlusCircle className='size-[50px]' />
         </button>
-        <h1 className='text-black text-4xl py-5'>Notes</h1>
+        <h1 className='text-black text-4xl py-5'>
+          Notes
+          <sub className='text-base font-light px-2.5'>
+            (click on note to mark as complete)
+          </sub>
+        </h1>
         <div className='shadow-2xl px-7 py-5 space-y-3'>
           {tasks.length === 0 && (
             <p className='text-black text-xl font-semibold'>
