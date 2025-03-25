@@ -43,12 +43,6 @@
 }
 
 @layer utilities {
-  .bg-linear {
-    @apply bg-gradient-to-r from-secondary to-teritary;
-  }
-  .text-linear {
-    @apply bg-gradient-to-r from-secondary to-teritary bg-clip-text text-transparent;
-  }
   .nav-text {
     @apply flex gap-4 text-lg;
   }
