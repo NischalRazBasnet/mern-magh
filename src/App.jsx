@@ -4,8 +4,8 @@ import RootLayout from './components/RootLayout';
 import Home from './pages/home/Home';
 import Temperature from './pages/temperature/Temperature';
 import Counter from './pages/counter/Counter';
-import User from './pages/user/User';
 import Product from './pages/products/Product';
+import User from './pages/user/User';
 
 export default function App() {
   const router = createBrowserRouter([
