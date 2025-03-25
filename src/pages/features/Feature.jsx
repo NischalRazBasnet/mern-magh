@@ -6,7 +6,7 @@ import { FcGoogle, FcReddit } from 'react-icons/fc';
 import { FaFacebook, FaGithub, FaHeart } from 'react-icons/fa6';
 import Tag from '../../components/Tag';
 import Card from '../../components/Card';
-import Menu from '../../components/menu';
+import Menu from '../../components/Menu';
 
 export default function Feature() {
   return (
