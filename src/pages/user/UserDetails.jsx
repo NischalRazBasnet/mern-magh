@@ -6,7 +6,7 @@ import {
   AiOutlineUsergroupDelete,
 } from 'react-icons/ai';
 
-export default function User() {
+export default function UserDetails() {
   const [users, setUsers] = useState([]);
 
   const handleUser = () => {
