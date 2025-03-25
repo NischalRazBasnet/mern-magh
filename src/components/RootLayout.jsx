@@ -10,7 +10,6 @@ export default function RootLayout() {
         <Header />
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }
